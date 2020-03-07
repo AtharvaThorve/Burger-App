@@ -4,14 +4,14 @@ import axios from '../../axios-orders';
 export const addIngredient = name => {
 	return {
 		type: actionTypes.ADD_INGREDIENT,
-		ingridentName: name
+		ingredientName: name
 	};
 };
 
 export const removeIngredient = name => {
 	return {
 		type: actionTypes.REMOVE_INGREDIENT,
-		ingridentName: name
+		ingredientName: name
 	};
 };
 
@@ -22,7 +22,7 @@ export const setIngredients = ingredients => {
 	};
 };
 
-export const fetchedIngredientsFailed = () => {
+export const fetchIngredientsFailed = () => {
 	return {
 		type: actionTypes.FETCHED_INGREDIENTS_FAILED
 	};
@@ -36,7 +36,7 @@ export const initIngredients = () => {
 				dispatch(setIngredients(response.data));
 			})
 			.catch(error => {
-				dispatch(fetchedIngredientsFailed());
+				dispatch(fetchIngredientsFailed());
 			});
 	};
 };
