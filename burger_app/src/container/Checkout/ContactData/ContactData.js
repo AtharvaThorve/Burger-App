@@ -89,7 +89,8 @@ class ContactData extends Component {
 				},
 				value: '',
 				validation: {
-					required: true
+					required: true,
+					isEmail: true
 				},
 				valid: false,
 				touched: false
@@ -131,6 +132,11 @@ class ContactData extends Component {
 		let isValid = true;
 		if (rules.required) {
 			isValid = value.trim() !== '' && isValid;
+		}
+
+		if (rules.isEmail) {
+			const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			isValid = pattern.test(value) && value;
 		}
 
 		if (rules.minLength) {
