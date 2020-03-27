@@ -18,7 +18,7 @@ User data form which is needed to be filled before placing the order.<br><br>
 Previous orders that were placed which are fetched from the database.<br><br>
 <img src="burger_app/images/Screenshot%20(8).png" width="750px" height="421.875"><br><br><br>
 
-### More screenshots in images folder
+#### More screenshots in images folder
 
 ## Technologies used
 1. **React** - To make the frontend web app
@@ -35,5 +35,7 @@ Previous orders that were placed which are fetched from the database.<br><br>
 - [x] Add form validation
 - [x] Add Redux support
 - [x] Add Redux thunk to support execution of asynchronous tasks in *Redux*
-- [ ] User authentication
+- [x] User Authentication
+- [ ] Fixing few bugs
+- [ ] Deployment
 <hr>
