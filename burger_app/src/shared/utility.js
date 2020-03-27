@@ -12,6 +12,7 @@ export const checkValidity = (value, rules) => {
 	}
 
 	if (rules.isEmail) {
+		// eslint-disable-next-line
 		const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 		isValid = pattern.test(value) && value;
 	}
