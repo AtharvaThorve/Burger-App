@@ -44,7 +44,7 @@ class Auth extends Component {
 	};
 
 	componentDidMount() {
-		if(!this.props.buildingBurger && this.props.authRedirectPath !== '/') {
+		if (!this.props.buildingBurger && this.props.authRedirectPath !== '/') {
 			this.props.onSetAuthRedirectPath();
 		}
 	}
@@ -144,6 +144,7 @@ class Auth extends Component {
 
 		return (
 			<div className={classes.Auth}>
+				{authRedirect}
 				{errorMessage}
 				<form onSubmit={this.submitHandler}>
 					{form}
@@ -152,7 +153,6 @@ class Auth extends Component {
 				<Button clicked={this.switchAuthModeHandler} btnType='Danger'>
 					SWITCH TO {this.state.isSignUp ? 'SIGNIN' : 'SIGNUP'}
 				</Button>
-				{authRedirect}
 			</div>
 		);
 	}
