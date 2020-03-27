@@ -6,6 +6,7 @@ A React application development
 - ScreenShots
 - Technologies Used
 - Tasks
+- Authors
 
 ## Concept
 A frontend React application from which an user can build a burger and place an order by filling their information in a form which is then stored in a firebase database
@@ -28,6 +29,7 @@ Previous orders that were placed which are fetched from the database.<br><br>
 5. **Form Validation** - Self implemented form validation to the project to get and store user data.
 6. **Firebase** - Firebase Realtime Database used to store and get data.
 7. **css-modules** - To add styling to the project.
+8. **Prettier** is used for formatting.
 
 ## Tasks
 - [x] Create React app for frontend.
@@ -36,6 +38,9 @@ Previous orders that were placed which are fetched from the database.<br><br>
 - [x] Add Redux support
 - [x] Add Redux thunk to support execution of asynchronous tasks in *Redux*
 - [x] User Authentication
-- [ ] Fixing few bugs
+- [x] Fixing few bugs
 - [ ] Deployment
+
+## Authors
+[Atharva Thorve](https://github.com/AtharvaThorve)
 <hr>
