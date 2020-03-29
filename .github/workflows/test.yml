@@ -18,7 +18,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: installing and running tests
       run: |
-        cd burger_app & npm install
-        cd burger_app & npm test
+        cd burger_app
+        npm install
+        npm test
       env: 
         CI: true
