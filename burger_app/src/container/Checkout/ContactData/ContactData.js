@@ -24,7 +24,7 @@ import { updateObject, checkValidity } from '../../../shared/utility';
 // 	};
 // };
 
-class ContactData extends Component {
+export class ContactData extends Component {
 	state = {
 		orderForm: {
 			// Name is for reference the helper function does the same work as done below

@@ -9,7 +9,7 @@ import classes from './Auth.css';
 import * as actions from '../../store/actions/index';
 import { updateObject, checkValidity } from '../../shared/utility';
 
-class Auth extends Component {
+export class Auth extends Component {
 	state = {
 		controls: {
 			email: {
